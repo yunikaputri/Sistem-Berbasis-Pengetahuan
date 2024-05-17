@@ -104,13 +104,13 @@ print("+----------------------+----------------------+")
 
 
 print("\nMenghitung nilai normalisasi SP / SN (NSP / NSN) : ")
-print("+----------------------+----------------------+")
-print("|         NSP          |          NSN         |")
-print("+----------------------+----------------------+")
+print("+---------------------+---------------------+")
+print("|         NSP         |         NSN         |")
+print("+---------------------+---------------------+")
 max_len = max(len(max(map(str, NSP), key=len)), len(max(map(str, NSN), key=len)))
 for nsp_val, nsn_val in zip(NSP, NSN):
     print(f"| {nsp_val:<{max_len}} | {nsn_val:<{max_len}} |")
-print("+----------------------+----------------------+")
+print("+---------------------+---------------------+")
 
 
 print("\nMenghitung nilai skor penilaian (AS) : ")
